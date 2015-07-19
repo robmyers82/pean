@@ -10,7 +10,7 @@ var http = require('http');
 var pg = require('../lib/postgres');
 
 // Your database configuration
-var DATABASE_URL = 'postgres://USERNAME:PASSWORD@localhost/DATABASE'
+var DATABASE_URL = 'postgres://user@localhost/db';
 
 // Connect to mysql database
 pg.initialize(DATABASE_URL, function(err) {

@@ -2,7 +2,11 @@ angular.module('nodeTodo', [])
 
 .controller('mainController', function($scope, $http) {
 
-    $scope.formData = {};
+    $scope.signedIn = function() {
+        return false;
+    }
+
+    /*$scope.formData = {};
     $scope.todoData = {};
 
     // Get all todos
@@ -36,5 +40,5 @@ angular.module('nodeTodo', [])
             .error(function(error) {
                 console.log('Error: ' + error);
             });
-    };
+    };*/
 });
